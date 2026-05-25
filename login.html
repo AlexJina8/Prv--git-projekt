@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prihlásenie — Môj projekt</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>body{background:#fbfdff}</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 style="margin:0;font-size:1.25rem">Môj projekt</h1>
+      <nav aria-label="Hlavná navigácia">
+        <a href="index.html">Domov</a>
+        <a href="register.html">Registrovať</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin-top:1rem">
+      <h2>Prihlásenie</h2>
+      <div class="form-card">
+        <form id="loginForm" action="#" method="post" onsubmit="handleLogin(event)">
+          <label>Email
+            <input type="email" name="email" required>
+          </label>
+          <label>Heslo
+            <input type="password" name="password" required>
+          </label>
+          <div style="margin-top:.75rem">
+            <button type="submit">Prihlásiť sa</button>
+          </div>
+          <p class="muted small" style="margin-top:.5rem">Ešte nemáte účet? <a href="register.html">Registrovať sa</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Môj projekt</small>
+  </footer>
+
+  <script>
+    function handleLogin(e){
+      e.preventDefault();
+      const f=new FormData(document.getElementById('loginForm'));
+      const email=f.get('email');
+      alert('Demo prihlásenie pre: '+email);
+    }
+  </script>
+</body>
+</html>
