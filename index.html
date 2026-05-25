@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Domov - Môj projekt</title>
+	<style>
+		body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;color:#222}
+		header{background:#0a74da;color:#fff;padding:1rem}
+		nav a{color:#fff;margin-right:1rem;text-decoration:none}
+		main{padding:1.5rem}
+		.hero{background:#f3f7fb;padding:1.5rem;border-radius:8px}
+		footer{padding:1rem;text-align:center;color:#666;font-size:.9rem}
+		.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+		form input,form textarea{width:100%;padding:.5rem;margin-top:.25rem;border:1px solid #ccc;border-radius:4px}
+		button{background:#0a74da;color:#fff;border:none;padding:.6rem 1rem;border-radius:4px;cursor:pointer}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="margin:0;font-size:1.25rem">Môj jednoduchý web</h1>
+		<nav aria-label="Hlavná navigácia">
+			<a href="#home">Domov</a>
+			<a href="#about">O projekte</a>
+			<a href="#kontakt">Kontakt</a>
+		</nav>
+	</header>
+	<main>
+		<section id="home" class="hero">
+			<h2>Vitajte</h2>
+			<p>Jednoduchá ukážková index stránka v slovenčine. Použite ju ako východzí bod pre váš projekt.</p>
+		</section>
+
+		<section id="about">
+			<h3>O projekte</h3>
+			<div class="grid">
+				<div>
+					<h4>Cieľ</h4>
+					<p>Prehľadná a responzívna šablóna pre rýchly začiatok práce.</p>
+				</div>
+				<div>
+					<h4>Technológie</h4>
+					<p>HTML5, jednoduchý CSS štýl bez externých knižníc.</p>
+				</div>
+				<div>
+					<h4>Ďalšie kroky</h4>
+					<p>Pridať vlastné štýly, skripty a obsah podľa potreby.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="kontakt">
+			<h3>Kontakt</h3>
+			<form action="#" method="post" onsubmit="alert('Odoslané (demo)');return false;">
+				<label>Vaše meno
+					<input type="text" name="name" required>
+				</label>
+				<label>Email
+					<input type="email" name="email" required>
+				</label>
+				<label>Správa
+					<textarea name="message" rows="4" required></textarea>
+				</label>
+				<div style="margin-top:.5rem"><button type="submit">Odoslať</button></div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<small>© 2026 Môj projekt — Vytvorené ako demo</small>
+	</footer>
+</body>
+</html>
